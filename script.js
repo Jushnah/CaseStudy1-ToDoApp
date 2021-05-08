@@ -50,7 +50,7 @@ $(document).ready(function(){
 
     var promise = new Promise(function(resolve, reject){
 
-      count = $('input[type=checkbox]:checked').not(':disabled').length;
+      var count = $('input[type=checkbox]:checked').not(':disabled').length;
       if(count==5){
           resolve("Congrats. 5 Tasks heve been Successfully Completed");
       }else{
